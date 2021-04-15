@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            background: deepskyblue;
+        }
+        .nav > a {
+            text-decoration: none;
+            color: honeydew;
+            padding: 15px 15px;
+            text-align: center;
+        }
+        .nav > a:hover {
+            background: skyblue;
+        }
+
+        @media all and (max-width: 800px) {
+            .nav > a {
+                flex-grow: 1;
+            }
+        }
+
+        @media all and (max-width: 550px) {
+            .nav {
+                width: max-content;
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav > a {
+                flex-grow: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Menu1</a>
+        <a href="#">Menu2</a>
+        <a href="#">Menu3</a>
+        <a href="#">Menu4</a>
+        <a href="#">Menu5</a>
+    </div>
+</body>
+</html>

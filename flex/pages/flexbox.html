@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing:border-box;
+        }
+        .container {
+            display: flex;
+            height: 500px;
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+            flex-flow: row nowrap;
+
+            justify-content: center;
+
+            /* align-content: space-evenly; */
+            align-items: center;
+
+            border: 1px solid red;
+        }
+        .item {
+            /* flex-basis: 400px; */
+            /* flex-grow: 0;
+            flex-shrink: 0; */
+
+            /* flex: 2 2 10%; */
+
+
+
+
+
+
+            /* width: 100px; */
+
+            padding: 10px;
+            border: 1px solid green;
+            background-color: lightcyan;
+            border-radius: 5px;
+        }
+        .item:nth-child(1) {
+            /* flex-grow: 4; */
+            /* flex-shrink: 5; */
+            /* align-self: stretch; */
+            order: 1
+        }
+        .item:nth-child(2) {
+            /* flex-grow: 1.1; */
+            /* flex-shrink: 1; */
+            order: -1;
+        }
+        /* .item:nth-child(3) {
+            flex-grow: 0; 
+            flex-shrink: 1;
+        } */
+    </style>
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <!-- <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+</body>
+</html>
